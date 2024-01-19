@@ -1,0 +1,38 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.title{
+    text-align: center;
+}
+.task-list{
+    display: inline;
+    margin-left: 30%;
+}
+.button{
+    border: 0;
+    background: #1b8f30;
+    width: 90px;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+}
+.button:hover{
+    background:#167227; ;
+}
+.input {
+    width: 300px;
+    padding: 8px;;
+}
+.items{
+    text-align: center;
+    margin-left: 35%;
+}
+li{
+    text-align: left;
+    list-style: decimal;
+}
+
+li.active{
+    text-decoration: line-through;
+}
