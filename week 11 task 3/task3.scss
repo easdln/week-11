@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1110px;
+}
+.online-store {
+
+		// .online-store_cart
+
+		&_cart {
+            text-align: left;
+            margin: 30px;
+            font-size: 40px;
+		}
+
+		// .online-store_container
+
+		&_container {
+            display: flex;
+            flex-direction: column;
+		}
+}
+
+.item {
+
+		// .item_online-store
+
+		&_online-store {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: row;
+            padding: 30px;
+            align-items: center;
+		}
+
+		// .item_img-container
+
+		&_img-container {
+            flex: 0 0 33.333%;
+            position: relative;
+            min-height: 190px;
+		}
+
+		// .item_img
+
+		&_img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            object-fit:fill;
+		}
+
+		// .item_description-container
+
+		&_description-container {
+            flex: 0 0 33.333%;
+            font-size: 20px;
+            
+		}
+        &_description-container >*:not(:last-child){
+            margin: 0 0 20px 0;
+        }
+
+		// .item_name
+
+		&_name {
+            font-weight: 600;
+		}
+
+        &_color {
+            opacity: 0.5;
+        }
+
+        &_size {
+            opacity: 0.5;
+        }
+        &_price {
+            flex: 0 0 33.333%;
+            font-size: 20px;
+            font-weight: 700;
+        }
+}
+.container {
+
+    // .container_btn-text
+
+    &_btn-text {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 50px;
+        align-items: center;
+    }
+}
+
+.online-store {
+    
+    // .online-store_button
+
+    &_button {
+        border: 0;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.882);
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    // .online-store_finish-price
+
+    &_finish-price {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}
+
+
+
+
